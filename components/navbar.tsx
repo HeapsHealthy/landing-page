@@ -8,7 +8,6 @@ import { Menu, X } from "lucide-react"
 const navItems = [
   { label: "Home", href: "/" },
   { label: "How it works", href: "/how-it-works" },
-  { label: "Contact", href: "/contact" },
 ]
 
 export function Navbar() {
