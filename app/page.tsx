@@ -170,7 +170,7 @@ export default function ComingSoonPage() {
 
           <div className="flex flex-col items-center gap-8 md:flex-row md:items-start md:gap-10">
             {/* Photo */}
-            <div className="relative w-48 shrink-0 md:w-56">
+            <div className="relative w-36 shrink-0 md:w-56">
               <div className="overflow-hidden rounded-2xl">
                 <Image
                   src="/images/chris-founder.png"
@@ -181,7 +181,7 @@ export default function ComingSoonPage() {
                 />
               </div>
               {/* Choc milk tattoo overlay */}
-              <div className="absolute -bottom-8 -left-8 h-24 w-24 overflow-hidden rounded-full border-2 border-[#FAF7F2] shadow-md md:h-28 md:w-28">
+              <div className="absolute -bottom-5 -left-5 h-16 w-16 overflow-hidden rounded-full border-2 border-[#FAF7F2] shadow-md md:-bottom-8 md:-left-8 md:h-28 md:w-28">
                 <Image
                   src="/images/choc-milk-tattoo.jpeg"
                   alt="Choc milk tattoo"
@@ -190,9 +190,24 @@ export default function ComingSoonPage() {
                   className="h-full w-full object-cover"
                 />
               </div>
-              {/* Hand-drawn "real tattoo" annotation */}
-              <div className="absolute -bottom-14 -left-28 flex items-end gap-1 md:-bottom-16 md:-left-32">
-                <span className="whitespace-nowrap font-handwriting text-lg text-[#7A8F6B] md:text-xl">
+              {/* Hand-drawn "real tattoo" annotation - mobile: left margin with arrow pointing down */}
+              {/* Mobile version */}
+              <div className="absolute -left-[60px] bottom-0 flex flex-col items-center md:hidden">
+                <span className="font-handwriting text-base leading-tight text-[#7A8F6B]">
+                  real
+                </span>
+                <span className="font-handwriting text-base leading-tight text-[#7A8F6B]">
+                  tattoo
+                </span>
+                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" className="mt-1 shrink-0">
+                  <path d="M4 2C8 8 14 16 20 22C24 26 28 30 32 33" stroke="#7A8F6B" strokeWidth="2" strokeLinecap="round" />
+                  <path d="M32 33C28 32 26 30 25 28" stroke="#7A8F6B" strokeWidth="2" strokeLinecap="round" fill="none" />
+                  <path d="M32 33C30 30 31 27 32 25" stroke="#7A8F6B" strokeWidth="2" strokeLinecap="round" fill="none" />
+                </svg>
+              </div>
+              {/* Desktop version */}
+              <div className="absolute -bottom-16 -left-32 hidden items-end gap-1 md:flex">
+                <span className="whitespace-nowrap font-handwriting text-xl text-[#7A8F6B]">
                   real tattoo
                 </span>
                 <svg width="50" height="36" viewBox="0 0 50 36" fill="none" className="shrink-0">
